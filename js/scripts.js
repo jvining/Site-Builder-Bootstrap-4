@@ -3,7 +3,7 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 
-// On Scroll Effectts  
+// On Scroll Effectts 
 $(function($) {
     $(window).scroll(function() {
         var navigation = $("nav.navbar");
@@ -17,3 +17,5 @@ $(function($) {
     });
 
 });
+ 
+ 
