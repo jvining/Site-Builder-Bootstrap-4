@@ -6,8 +6,8 @@ $(function () {
 // On Scroll Effectts 
 $(function($) {
     $(window).scroll(function() {
-        var navigation = $("nav.navbar");
-        var eventDynamicInfo = $("#eco-header-info");
+        var navigation = $("body.front nav.navbar");
+        var eventDynamicInfo = $("body.front  #eco-header-info");
         
 		if ($(this).scrollTop() >= 180) {navigation.addClass('navbar-light bg-light');}
 		else navigation.removeClass('navbar-light bg-light');

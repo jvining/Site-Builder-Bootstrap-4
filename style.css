@@ -20,11 +20,16 @@ body h1, body h2, body h3, body h4, body h5 {font-weight:700; color:#666;}
 /* Primary Navigation */
 body header #header-top .navbar{transition:.3s ease-in-out; height:6em;}
 
+body.not-front header #header-top .navbar{box-shadow: 0 10px 25px 2px rgba(0, 0, 0, 0.3);}
+
 body header #header-top .navbar .nav-item a {color:#fff; font-size:.85em; font-weight:700; padding: 1.25rem 1rem; text-transform:uppercase;}
-body header #header-top .navbar .nav-item a:hover {background:#007bff; color:#fff; }
+body header #header-top .navbar .nav-item a:hover {background:#007bff; color:#fff;}
 
 body header #header-top .navbar .nav-item:last-child a {color:#fff; margin-top:1rem!important; padding:.25rem 1rem!important;}
-body header #header-top .navbar .nav-item:last-child a:hover {background-color: #c82333; border-color: #bd2130;}
+body header #header-top .navbar .nav-item:last-child a:hover {background-color:#c82333; border-color:#bd2130;}
+
+body header #header-top .navbar .navbar-collapse.collapse.show , body header #header-top .navbar .navbar-collapse.collapsing{background:#fff;padding: 2em 1.25em 1.5em!important; }
+body header #header-top .navbar .navbar-collapse.collapse.show .nav-item a, body header #header-top .navbar .navbar-collapse.collapsing .nav-item a{color:#333; font-size:1em;}
 
 body header #header-top .navbar .nav-item .dropdown-item{color:#333; font-size:.85em;}
 
@@ -36,10 +41,13 @@ body header #header-top .navbar.navbar-light.bg-light .nav-item a:hover {color:#
 @media(max-width:1200px){body header #header-top .navbar .nav-item a {font-size:.7em;}}
 @media(max-width:990px){body header #header-top .navbar .nav-item {margin:0!important;} body header #header-top .navbar .nav-item a { padding: .9rem .9rem;}}
 
-body header #header-top .navbar .navbar-collapse.collapse.show , body header #header-top .navbar .navbar-collapse.collapsing{background:#fff;padding: 2em 1.25em 1.5em!important; }
-body header #header-top .navbar .navbar-collapse.collapse.show .nav-item a, body header #header-top .navbar .navbar-collapse.collapsing .nav-item a{color:#333; font-size:1em;}
+/* Hero / Page Headers */
+body.front header #header-bottom .jumbotron{height:100vh; margin-bottom:0;}
+body.not-front header #header-bottom .jumbotron{height:15em; margin-bottom:0; margin-top: 6em;}
+@media(max-width:990px){body.not-front header #header-bottom .jumbotron{min-height:10em; margin-top:4em;}}
+@media(max-width:768px){body.not-front header #header-bottom .jumbotron{height:12em;}}
+@media(max-width:550px){body.not-front header #header-bottom .jumbotron{height:5em;}}
 
- 
 /* Logo */  
 body header #header-top .navbar .navbar-brand img {max-height:70px; filter: brightness(0) invert(1); -webkit-filter: brightness(0) invert(1); transition:.3s ease-in-out;} 
 body header #header-top .navbar.navbar-light.bg-light .navbar-brand img {-webkit-filter: none; transition:.3s ease-in-out;} 
@@ -64,7 +72,10 @@ body header #header-bottom #eco-header-info li.misc:before {content:"\f095";}
 @media(max-width:768px){body header #header-bottom #eco-header-info.on-scroll{top:4em; min-height:5em;}}
 
 /* Full Width Images & Backgrounds */
-body header #header-bottom .jumbotron{background:url('https://source.unsplash.com/random/1400x750') center center scroll no-repeat; background-size:cover; box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .4); height:100vh; margin-bottom:0;}
+
+body.front header #header-bottom .jumbotron{background:url('https://source.unsplash.com/random/1400x750') center center scroll no-repeat; background-size:cover; box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .4); height:100vh; margin-bottom:0;}
+
+body.not-front header #header-bottom .jumbotron{background:url('https://source.unsplash.com/random/1400x350') center center scroll no-repeat; background-size:cover; box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .5);}
 
 .bg-parallax{background:url('https://webdemo1.wbresearch.com/UploadedFiles/EventPage/1000902/images/collage2.jpg') center center no-repeat;  background-size:cover; box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .2);}
 
@@ -111,6 +122,8 @@ body header #header-bottom .jumbotron{background:url('https://source.unsplash.co
 
 /* Content Container */
 .noHover{pointer-events:none;}
+
+a.text-decoration-none{text-decoration:none!important;}
 
 .page-header{border-bottom:none;}
 .page-header:before{content:"\2013  ";} 
