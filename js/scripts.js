@@ -1,7 +1,7 @@
 // Enable Tool Tips Globally 
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
-})
+});
 
 // On Scroll Effectts 
 $(function($) {
