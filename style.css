@@ -82,8 +82,17 @@ body.not-front header #header-bottom .jumbotron{background:url('https://source.u
 
 .bg-parallax{background:url('https://webdemo1.wbresearch.com/UploadedFiles/EventPage/1000902/images/collage2.jpg') center center no-repeat;  background-size:cover; box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .2);}
 
-.bg-lighten {box-shadow: inset 10000px 0 0 rgba(255, 255, 255, .92);}
-.bg-darken {box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .12);} 
+.bg-lighten-1 {box-shadow: inset 10000px 0 0 rgba(255, 255, 255, .1);} .bg-lighten-2 {box-shadow: inset 10000px 0 0 rgba(255, 255, 255, .2);}
+.bg-lighten-3 {box-shadow: inset 10000px 0 0 rgba(255, 255, 255, .3);} .bg-lighten-4 {box-shadow: inset 10000px 0 0 rgba(255, 255, 255, .4);}
+.bg-lighten-5 {box-shadow: inset 10000px 0 0 rgba(255, 255, 255, .5);} .bg-lighten-6 {box-shadow: inset 10000px 0 0 rgba(255, 255, 255, .6);}
+.bg-lighten-7 {box-shadow: inset 10000px 0 0 rgba(255, 255, 255, .7);} .bg-lighten-8 {box-shadow: inset 10000px 0 0 rgba(255, 255, 255, .8);}
+.bg-lighten-9 {box-shadow: inset 10000px 0 0 rgba(255, 255, 255, .9);} .bg-lighten-10,.bg-white {box-shadow: inset 10000px 0 0 rgba(255, 255, 255, 1);}
+ 
+.bg-darken-1 {box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .1);} .bg-darken-2 {box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .2);} 
+.bg-darken-3 {box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .3);} .bg-darken-4 {box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .4);} 
+.bg-darken-5 {box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .5);} .bg-darken-6 {box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .6);} 
+.bg-darken-7 {box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .7);} .bg-darken-8 {box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .8);} 
+.bg-darken-9 {box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .9);} .bg-darken-10,.bg-black {box-shadow: inset 10000px 0 0 rgba(0, 0, 0, 1);}  
  
 .bg-slant-l {clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 90%);}
 .bg-slant-r {clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);}
