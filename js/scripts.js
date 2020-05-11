@@ -1,7 +1,7 @@
 // Enable Tool Tips Globally 
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
-})
+});
 
 // On Scroll Effectts 
 $(function($) {
@@ -17,5 +17,52 @@ $(function($) {
     });
 
 });
- 
- 
+
+$(document).ready(function(){
+    $('#slider1').slick({
+		slidesToShow: 8,
+		slidesToScroll: 8,
+		autoplay: true,
+		autoplaySpeed: 2500,
+		speed: 1300,
+		arrows: false,
+		dots: false,
+		pauseOnHover: true,
+		responsive: [{
+		    breakpoint: 768,
+		    settings: {
+		        slidesToShow: 4
+		    }
+		}, {
+		    breakpoint: 520,
+		    settings: {
+		        slidesToShow: 3
+		    }
+		}]
+	});
+});		
+$(document).ready(function(){
+    $('#slider2').slick({
+		slidesToShow: 8,
+		slidesToScroll: -8,
+		autoplay: true,
+		autoplaySpeed: 2500,
+		speed: 1300,
+		arrows: false,
+		dots: false,
+		pauseOnHover: true,
+		responsive: [{
+		    breakpoint: 768,
+		    settings: {
+		        slidesToShow: 4
+		    }
+		}, {
+		    breakpoint: 520,
+		    settings: {
+		        slidesToShow: 3
+		    }
+		}]
+	});
+});		
+
+  
