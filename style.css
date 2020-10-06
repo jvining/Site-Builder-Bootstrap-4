@@ -1,6 +1,6 @@
 /*
-Project Name: Web Demo Bootstrap 4
-Project URI: https://jvining.github.io/Web-Demo-Bootstrap-4
+Project Name: Site Builder Bootstrap 4
+Project URI: https://jvining.github.io/Site-Builder-Bootstrap-4/
 Description:WBR Web Template Demo built on Bootstrap 4 (http://bit.ly/1SnymWq)
 Author: Joshua Vining
 Author URI: https://github.com/jvining
@@ -9,34 +9,26 @@ Author URI: https://github.com/jvining
 @media(max-width:990px){}
 @media(max-width:768px){}
 @media(max-width:550px){}
-
-
 */
-
 
 body {background:#fff; color:#5f5f5f; font-size:16px; line-height:1.75em; font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";}
 body h1, body h2, body h3, body h4, body h5 {font-weight:700; color:#666;}
-
-/* Sticky Footer */
-#eco-page-content {min-height: calc(60vh - 10vh);}
 
 /* Primary Navigation */
 body header #header-top .navbar{transition:.3s ease-in-out; height:6em;}
 
 body.not-front header #header-top .navbar{box-shadow: 0 10px 25px 2px rgba(0, 0, 0, 0.3);}
 
-body header #header-top .navbar .nav-item a {color:#fff; font-size:.85em; font-weight:700; padding: 1.25rem 1rem; text-transform:uppercase;}
+body header #header-top .navbar .nav-item:last-child a {color:#fff; margin-top:1rem!important; padding:.25rem 1rem!important;}
+
+body header #header-top .navbar .nav-item a {color:#fff;font-size:.85em;font-weight:700;padding: 1.25rem 1rem;text-transform:uppercase;}
 body header #header-top .navbar .nav-item a:hover {background:#007bff; color:#fff;}
 
-body header #header-top .navbar .nav-item:last-child a {color:#fff; margin-top:1rem!important; padding:.25rem 1rem!important;}
-body header #header-top .navbar .nav-item:last-child a:hover {background-color:#c82333; border-color:#bd2130;}
-
-body header #header-top .navbar .navbar-collapse.collapse.show , body header #header-top .navbar .navbar-collapse.collapsing{background:#fff;padding: 2em 1.25em 1.5em!important; }
-body header #header-top .navbar .navbar-collapse.collapse.show .nav-item a, body header #header-top .navbar .navbar-collapse.collapsing .nav-item a{color:#333; font-size:1em;}
-
-body header #header-top .navbar .nav-item .dropdown-item{color:#333; font-size:.85em;}
-
 body header #header-top .navbar  .dropdown:hover > .dropdown-menu {display:block;}
+body header #header-top .navbar .nav-item .dropdown-item{color:#333; font-size:.85em; padding: .75rem .75rem;}
+
+body header #header-top .navbar .navbar-collapse.collapse.show , body header #header-top .navbar .navbar-collapse.collapsing{background:#fff;padding: 2em 1.25em 1.5em!important;}
+body header #header-top .navbar .navbar-collapse.collapse.show .nav-item a, body header #header-top .navbar .navbar-collapse.collapsing .nav-item a{color:#333; font-size:1em;}
 
 body header #header-top .navbar.navbar-light.bg-light .nav-item a {color:#333;}
 body header #header-top .navbar.navbar-light.bg-light .nav-item a:hover {color:#fff;}
@@ -65,38 +57,21 @@ body header #header-top .navbar.navbar-light.bg-light .navbar-toggler {border-co
 body header #header-top .navbar.navbar-light.bg-light .navbar-toggler-icon {background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(51, 51, 51, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); transition:.3s ease-in-out;} 
 
 /* Event Dynamic Info*/
-body header #header-bottom #eco-header-info.on-scroll{background:#007bff; top:5.5em; left:0; right:0;  position:fixed; z-index:1; height: 2.5em; padding-top: .25em; box-shadow:0 10px 25px 2px rgba(0, 0, 0, 0.3);}
-body header #header-bottom #eco-header-info li{color:#fff; font-size:1em;}
-body header #header-bottom #eco-header-info li:before { color:#fff; font-family:"FontAwesome"; margin-right:.5em; }
-body header #header-bottom #eco-header-info li.date:before {content:"\f073";}
-body header #header-bottom #eco-header-info li.venue:before {content:"\f041";}
-body header #header-bottom #eco-header-info li.misc:before {content:"\f095";}  
-@media(max-width:990px){body header #header-bottom #eco-header-info.on-scroll{top: 4em;padding-top:.55em;}}
-@media(max-width:768px){body header #header-bottom #eco-header-info.on-scroll{top:4em; min-height:5em;}}
+body header #header-bottom #sb-header-info.on-scroll{background:#007bff; top:5.5em; left:0; right:0;  position:fixed; z-index:1; height: 2.5em; padding-top: .25em; box-shadow:0 10px 25px 2px rgba(0, 0, 0, 0.3);}
+body header #header-bottom #sb-header-info li{color:#fff; font-size:1em;}
+body header #header-bottom #sb-header-info li:before { color:#fff; font-family:"FontAwesome"; margin-right:.5em; }
+body header #header-bottom #sb-header-info li.date:before {content:"\f073";}
+body header #header-bottom #sb-header-info li.venue:before {content:"\f041";}
+body header #header-bottom #sb-header-info li.misc:before {content:"\f095";}  
+@media(max-width:990px){body header #header-bottom #sb-header-info.on-scroll{top: 4em;padding-top:.55em;}}
+@media(max-width:768px){body header #header-bottom #sb-header-info.on-scroll{top:4em; min-height:5em;}}
 
 /* Full Width Images & Backgrounds */
-
-body.front header #header-bottom .jumbotron{background:url('https://source.unsplash.com/random/1400x750') center center scroll no-repeat; background-size:cover; box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .4); height:100vh; margin-bottom:0;}
-
+body.front header #header-bottom .jumbotron{background:url('https://source.unsplash.com/random/1400x750') center center scroll no-repeat; background-size:cover; box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .4);}
 body.not-front header #header-bottom .jumbotron{background:url('https://source.unsplash.com/random/1400x350') center center scroll no-repeat; background-size:cover; box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .5);}
 
 .bg-parallax{background:url('https://webdemo1.wbresearch.com/UploadedFiles/EventPage/1000902/images/collage2.jpg') center center no-repeat;  background-size:cover; box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .2);}
 
-.bg-lighten-1 {box-shadow: inset 10000px 0 0 rgba(255, 255, 255, .1);} .bg-lighten-2 {box-shadow: inset 10000px 0 0 rgba(255, 255, 255, .2);}
-.bg-lighten-3 {box-shadow: inset 10000px 0 0 rgba(255, 255, 255, .3);} .bg-lighten-4 {box-shadow: inset 10000px 0 0 rgba(255, 255, 255, .4);}
-.bg-lighten-5 {box-shadow: inset 10000px 0 0 rgba(255, 255, 255, .5);} .bg-lighten-6 {box-shadow: inset 10000px 0 0 rgba(255, 255, 255, .6);}
-.bg-lighten-7 {box-shadow: inset 10000px 0 0 rgba(255, 255, 255, .7);} .bg-lighten-8 {box-shadow: inset 10000px 0 0 rgba(255, 255, 255, .8);}
-.bg-lighten-9 {box-shadow: inset 10000px 0 0 rgba(255, 255, 255, .9);} .bg-lighten-10,.bg-white {box-shadow: inset 10000px 0 0 rgba(255, 255, 255, 1);}
- 
-.bg-darken-1 {box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .1);} .bg-darken-2 {box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .2);} 
-.bg-darken-3 {box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .3);} .bg-darken-4 {box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .4);} 
-.bg-darken-5 {box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .5);} .bg-darken-6 {box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .6);} 
-.bg-darken-7 {box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .7);} .bg-darken-8 {box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .8);} 
-.bg-darken-9 {box-shadow: inset 10000px 0 0 rgba(0, 0, 0, .9);} .bg-darken-10,.bg-black {box-shadow: inset 10000px 0 0 rgba(0, 0, 0, 1);}  
- 
-.bg-slant-l {clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 90%);}
-.bg-slant-r {clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);}
- 
 .bg-grey {background:#eee;}
 
 .bg-gradient-img:before {content: ""; width: 100%; height: 100%; position: absolute; top: 0px; left: 0; }
@@ -113,7 +88,7 @@ body.not-front header #header-bottom .jumbotron{background:url('https://source.u
 .fa-2x{font-size:2em;} .fa-3x{font-size:3em;} .fa-4x{font-size:4em;} 
 .fa-5x{font-size:5em;} .fa-6x{font-size:6em;} .fa-7x{font-size:7em;} 
 .fa-8x{font-size:8em;} .fa-9x{font-size:9em;} .fa-x {font-size:10em;}
- @media(max-width:990px){h1{font-size:2em!important;transition:.3s ease-in-out;} h2{font-size:1.5em!important;transition:.3s ease-in-out;} h3{font-size:1.25em!important;transition:.3s ease-in-out;} h4{font-size:1.15em!important;transition:.3s ease-in-out;} h5{font-size:1em!important;transition:.3s ease-in-out;} p, ul, ol, li, table, address, blockquote, cite{font-size:14px!important;line-height:1.5em!important; transition:.3s ease-in-out;}}
+ @media(max-width:990px){h1{font-size:2em!important;transition:.3s ease-in-out;} h2{font-size: 1.25em!important;transition:.3s ease-in-out;} h3{font-size:1.25em!important;transition:.3s ease-in-out;} h4{font-size:1.15em!important;transition:.3s ease-in-out;} h5{font-size:1em!important;transition:.3s ease-in-out;} p, ul, ol, li, table, address, blockquote, cite{font-size:14px!important;line-height:1.5em!important; transition:.3s ease-in-out;}}
 
 .text-300, .text-light {font-weight:300;}
 .text-400, .text-normal{font-weight:400;}
@@ -128,10 +103,21 @@ body.not-front header #header-bottom .jumbotron{background:url('https://source.u
 @media (min-width:768px){.col-md-15{-webkit-box-flex:0;-ms-flex:0 0 20%;flex:0 0 20%;max-width:20%;}}
 @media (min-width:550px){.col-sm-15{-webkit-box-flex:0;-ms-flex:0 0 20%;flex:0 0 20%;max-width:20%;}}
 
-.btn,.btn:hover {transition:.3s ease-in-out;}
+/* Buttons */
+.btn,.btn:hover {transition:.3s ease-in-out; color:#fff!important;}
 .btn-xl{padding: .7rem 1.25rem; font-size: 1.5rem; border-radius: .5rem; transition:.3s ease-in-out;}
 @media(max-width:990px){.btn-xl{padding: .375rem .75rem; font-size: 1.25rem; line-height: 1.5; border-radius: .25rem; transition:.3s ease-in-out;}}
 
+/* Button Overrides */
+.btn-inverse{}
+.btn-inverse:hover{}
+
+body header #header-top .navbar .nav-item:last-child a{}
+body header #header-top .navbar .nav-item:last-child a:hover{background-color:#c82333; border-color:#bd2130;}
+
+.btn-pricing-control{}
+.btn-pricing-control:hover{}
+ 
 /* Content Container */
 .noHover{pointer-events:none;}
 
@@ -146,7 +132,11 @@ blockquote {background-color:transparent; border:none; margin:0px; quotes:none;}
 blockquote p {display:inline-block;}
 blockquote cite {display:block; border:none; padding:0; font-weight:600;}
 blockquote cite:before {content:"- ";} 
- 
+
+/* Slanted Container Styles */
+.bg-slant {padding-left:0; padding-right:0;}
+.bg-slant > .container-fluid:nth-child(odd){clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 90%);}
+
 /* Speakers */
 .speaker-image-block {height:200px; width:200px; overflow:hidden;display:block;margin:0 auto; border-radius:.25em;}
 .speaker-image-block img {transition: all 0.3s ease; }
